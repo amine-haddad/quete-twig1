@@ -1,0 +1,14 @@
+
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+        <h1>Hello bob !</h1>
+     {{dump(products)}}
+    {% for product in products %} 
+        <div>{{product.title}}</div>
+        <div>{{instru}}</div>
+    {% endfor %}
+{% endblock %}
+
+
+
